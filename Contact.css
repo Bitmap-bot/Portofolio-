@@ -1,0 +1,69 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    color: #58a6ff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar {
+    /* posisi navbar */
+    position: relative;
+    /* Lebih tinggi dari gambar dan konten lainnya */
+    z-index: 2;
+    /*  warna latar */
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navbar a {
+    color: #58a6ff;
+    padding: 5px 5px;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    font-size: 19px;
+    color: white;
+    transition: 0.2 ease-in-out;
+    transition-delay: 1.5;
+    border-radius: 3px;
+}
+
+.h1-container {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 25px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.p-content {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}

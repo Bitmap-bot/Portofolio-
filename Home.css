@@ -1,0 +1,266 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+  color: #58a6ff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.navbar {
+    /* posisi navbar */
+    position: relative;
+    /* Lebih tinggi dari gambar dan konten lainnya */
+    z-index: 2;
+    /*  warna latar */
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navbar a {
+    color: #58a6ff;
+    padding: 5px 5px;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+  font-size: 19px;
+    color: white;
+    transition: 0.2 ease-in-out;
+    transition-delay: 1.5;
+    border-radius: 3px;
+}
+
+.intro {
+    padding: 5rem 0;
+    background-color: #0d1117;
+}
+
+.intro h1 {
+    font-size: 40px;
+    margin-left: 15px;
+    color: #58a6ff;
+}
+
+.intro h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+    font-size: 35px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.intro p {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    color: #c9d1d9;
+    margin-left: 7rem;
+    font-size: 15px;
+    font-family: Verdana;
+}
+
+section {
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.swipe-btn {
+  margin-top: 70px;
+   padding: 7px 5px;
+      font-size: 18px;
+      background-color: #58a6ff;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+}
+
+.swipe-btn:hover {
+    background-color: #8b949e;
+    color: white;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 7rem 0;
+    background-color: #161b22;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #58a6ff;
+}
+
+.about-me h2 span {
+    color: #c9d1d9;
+}
+
+.about-me p {
+    margin: 15px 0;
+    color: #ffff;
+}
+
+/* project section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #58a6ff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 15px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+/* about me animated */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.about-me p {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* project animated */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.project p {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.contact-me {
+    padding: 7rem 0;
+    background-color: #161b22;
+}
+
+.contact-me h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #58a6ff;
+}
+
+.fa-instagram {
+  font-size: 30px;
+  color: red;
+  margin-right: 6px;
+  margin-top: 8px;
+}
+
+.instagram {
+  color: white;
+  font-size: 17px;
+  margin-right: 45px;
+  text-decoration: none;
+  }
+
+.fa-tiktok {
+  font-size: 30px;
+  color: white;
+  margin-right: 6px;
+  margin-top: 8px;
+}
+.tiktok {
+  color: white;
+  font-size: 17px;
+  margin-right: 45px;
+  text-decoration: none;
+}
